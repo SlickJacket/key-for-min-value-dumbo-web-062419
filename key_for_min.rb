@@ -5,11 +5,11 @@ def key_for_min_value(name_hash)
   lowestKey = nil
   lowestValue = Float::INFINITY
   name_hash.each do |k, v|
-    if v < lowest_value
+    if v < lowestValue
       lowestValue = v
       lowestKey = k
     end
-  end 
+  end
   lowestKey
 
 end
